@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Re-run automatically when fish_plugins changes:
+# {{ include "dot_config/fish/fish_plugins" | sha256sum }}
+
+if ! command -v fish >/dev/null 2>&1; then
+    echo "fish is not installed yet; skipping fisher sync."
+    exit 0
+fi
+
+fish -c '
+    if not functions -q fisher
+        curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
+    end
+    fisher update
+'

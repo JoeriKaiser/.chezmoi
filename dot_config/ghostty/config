@@ -1,0 +1,8 @@
+# Ghostty configuration
+# DMS writes generated theme colors to ~/.config/ghostty/themes/dankcolors;
+# the '?' prefix keeps startup clean if DMS hasn't generated it yet.
+config-file = ?themes/dankcolors
+
+window-decoration = none
+confirm-close-surface = false
+copy-on-select = clipboard
