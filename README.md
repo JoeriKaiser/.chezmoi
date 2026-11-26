@@ -4,8 +4,12 @@ Dotfiles and Fedora bootstrap scripts managed with [chezmoi](https://www.chezmoi
 
 ## Bootstrap on a fresh minimal Fedora install
 
+For the full Fedora Everything ISO walkthrough (installer options, LUKS, Wi-Fi in TTY, private repo auth, and troubleshooting), see [INSTALL.md](./INSTALL.md).
+
+Quick version once online in the minimal TTY:
+
 ```bash
-sudo dnf install -y git chezmoi
+sudo dnf upgrade --refresh -y && sudo dnf install -y git chezmoi
 chezmoi init --apply https://github.com/JoeriKaiser/.chezmoi.git
 ```
 
