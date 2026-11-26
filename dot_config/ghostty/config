@@ -3,6 +3,7 @@
 # the '?' prefix keeps startup clean if DMS hasn't generated it yet.
 config-file = ?themes/dankcolors
 
+font-family = IoskeleyMono Nerd Font
 window-decoration = none
 confirm-close-surface = false
 copy-on-select = clipboard
